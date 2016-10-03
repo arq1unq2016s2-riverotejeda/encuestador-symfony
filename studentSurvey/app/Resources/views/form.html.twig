@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}PoC Symfony{% endblock %}</title>
+        {% block stylesheets %}{% endblock %}
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+    </head>
+    <body>
+    <h2>Formulario con Symfony3</h2>
+
+    {{form_start(form, {'action':'', 'method':'POST'})}}
+    {{form_end(form)}}
+    </body>
+</html>

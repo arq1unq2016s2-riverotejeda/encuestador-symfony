@@ -21,7 +21,7 @@ class SurveyController extends Controller
      $survey = new Survey();
       $form = $this->createForm(SurveyType::class,$survey);
 
-  return $this->render('AppBundle:Survey:form.html.twig', array(
+  return $this->render('form.html.twig', array(
           'form' => $form->createView()
       ));
    }
