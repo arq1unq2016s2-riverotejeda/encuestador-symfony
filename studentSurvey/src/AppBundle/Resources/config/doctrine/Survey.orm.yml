@@ -1,0 +1,21 @@
+AppBundle\Entity\Survey:
+    type: entity
+    table: null
+    repositoryClass: AppBundle\Repository\SurveyRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        name:
+            type: string
+            length: 255
+        studentId:
+            type: integer
+            unique: true
+            column: student_id
+        courses:
+            type: json_array
+    lifecycleCallbacks: {  }

@@ -15,6 +15,10 @@ Para correr la prueba:
 
 -Instalar Symfony (http://symfony.com/download)
 
+-Instalar Composer (https://getcomposer.org/download/)
+
+-Dentro de la carpeta del proyecto, ejecutar: composer install (esto descargará todas las dependencias necesarias)
+
 -Correr en una consola:
 
 ```
